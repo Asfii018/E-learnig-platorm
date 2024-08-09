@@ -1,0 +1,222 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background: linear-gradient(135deg, #f4f4f9, #e0e5ec);
+  color: #333;
+  overflow-x: hidden;
+  
+}
+
+/* Header Styling */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #e74c3c;
+  border-radius: 30px;
+  text-align: center;
+}
+
+header .logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: rgb(12, 12, 12);
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #004080;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* Adjusted for fixed header */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #003366;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #003366;
+  transform: scale(1.02);
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #e74c3c;
+}
+
+/* Main Content Styling */
+main {
+  margin-left: 250px;
+  padding: 80px 20px 20px; /* Adjusted for fixed header */
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+/* Flexbox Container for Sections */
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Individual Section Styling */
+main section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+  flex: 1 1 calc(33% - 20px); /* Adjust for multiple columns */
+  min-width: 300px; /* Ensure responsiveness */
+  box-sizing: border-box;
+}
+
+/* Section Headings */
+main section h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #003366;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+  display: inline-block;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+main section h1:hover {
+  color: #e74c3c;
+  border-bottom-color: #003366;
+}
+
+main section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Main Content Styling */
+main {
+  margin-left: 250px;
+  padding: 80px 20px 20px; /* Adjusted for fixed header */
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+/* Flexbox Container for Sections */
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Individual Section Styling */
+main section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+  flex: 1 1 calc(33% - 20px); /* Adjust for multiple columns */
+  min-width: 300px; /* Ensure responsiveness */
+  box-sizing: border-box;
+}
+
+/* Section Headings */
+main section h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #003366;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+  display: inline-block;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+main section h1:hover {
+  color: #e74c3c;
+  border-bottom-color: #003366;
+}
+
+main section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+

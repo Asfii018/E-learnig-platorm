@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User - Admin Panel</title>
+    <link rel="stylesheet" href="css/managecourses.css">
+    <link rel="stylesheet" href="css/add-user.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manage-users.html">Manage Users</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="add-user">
+            <h1>Add New User</h1>
+            <form action="submit-user.html" method="post">
+                <div class="form-group">
+                    <label for="user-name">Full Name:</label>
+                    <input type="text" id="user-name" name="user-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" name="user-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-role">Role:</label>
+                    <select id="user-role" name="user-role" required>
+                        <option value="">Select Role</option>
+                        <option value="admin">Admin</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" name="user-password" required>
+                </div>
+                <a href="manage-users.html" type="submit" class="btn">Add User</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

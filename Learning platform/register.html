@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform - Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="auth-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" required minlength="3">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required minlength="6">
+                <button type="submit">Register</button>
+            </form>
+            <button id="google-register-button">Register with Google</button>
+            <button id="facebook-register-button">Register with Facebook</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Learning Platform</p>
+    </footer>
+
+    <!-- Firebase setup scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

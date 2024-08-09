@@ -1,0 +1,85 @@
+/* General Styling for Settings */
+#settings {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Title Styling */
+#settings h1 {
+  font-size: 28px;
+  color: #003366;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+#settings h1:hover {
+  color: #e74c3c;
+}
+
+/* Settings Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-group label {
+  font-size: 16px;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.settings-group input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-group input:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
+  outline: none;
+}
+
+.save-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

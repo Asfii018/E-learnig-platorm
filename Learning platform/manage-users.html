@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/manage-users.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="login.html">Login</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="manage-users">
+            <h1>Manage Users</h1>
+             <a href="add-user.html" class="btn add-user-btn">Add New User </a>
+            <div class="search-filter">
+                <input type="text" id="search-user" placeholder="Search users...">
+            </div>
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JohnDoe</td>
+                        <td>johndoe@example.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <button class="btn edit-btn">Edit</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JaneSmith</td>
+                        <td>janesmith@example.com</td>
+                        <td>User</td>
+                        <td>
+                            <button class="btn edit-btn">Edit</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+  
+</body>
+</html>

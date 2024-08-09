@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #0a2849;
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e0e0e0;
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+}
+
+#manage-courses {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#manage-courses h1 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.add-course-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-course-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.search-filter {
+  margin: 20px 0;
+}
+
+.search-filter input {
+  width: 40%;
+  padding: 10px;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-filter input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Table Styles */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.courses-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.courses-table th, .courses-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.courses-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.courses-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

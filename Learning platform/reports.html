@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/reports.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reports">
+            <h1>Reports</h1>
+            <div class="report-filters">
+                <select id="report-type">
+                    <option value="sales">Sales Report</option>
+                    <option value="user">User Activity</option>
+                    <option value="course">Course Enrollment</option>
+                </select>
+                <input type="date" id="report-date" placeholder="Select Date">
+                <button class="btn generate-report-btn">Generate Report</button>
+            </div>
+            <div class="report-container">
+                <h2>Report Overview</h2>
+                <div class="report-card">
+                    <h3>Total Sales</h3>
+                    <p>$12,345</p>
+                </div>
+                <div class="report-card">
+                    <h3>Active Users</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="report-card">
+                    <h3>Course Enrollments</h3>
+                    <p>567</p>
+                </div>
+                <!-- Add more report cards as needed -->
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

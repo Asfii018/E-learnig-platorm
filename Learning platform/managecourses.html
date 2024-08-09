@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses - Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/managecourses.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="manage-courses">
+            <h1>Manage Courses</h1>
+             <a href="add-course.html" class="btn add-course-btn">Add New Course </a>
+            <div class="search-filter">
+                <input type="text" id="search-course" placeholder="Search courses...">
+            </div>
+            <table class="courses-table">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Course 1</td>
+                        <td>Description of Course 1</td>
+                        <td>Category 1</td>
+                        <td>
+                            <button class="btn edit-btn">Edit</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course 2</td>
+                        <td>Description of Course 2</td>
+                        <td>Category 2</td>
+                        <td>
+                            <button class="btn edit-btn">Edit</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

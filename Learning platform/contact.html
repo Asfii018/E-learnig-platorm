@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform - Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="E-Learning Platform Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h2>Our Contact Details</h2>
+                    <p><strong>Email:</strong> <a href="mailto:info@elearningplatform.com">info@elearningplatform.com</a></p>
+                    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                    <p><strong>Address:</strong> 123 Education Lane, Learning City, LC 45678</p>
+                </div>
+                <div class="map">
+                    <h2>Find Us</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.6654162937225!2d-73.9852914845949!3d40.74881797932762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af4e7f0e1d%3A0x9d8355d8d61cc9f5!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620658795331!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Google Maps Location"></iframe>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Learning Platform</p>
+    </footer>
+</body>
+</html>

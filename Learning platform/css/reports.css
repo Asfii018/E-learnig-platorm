@@ -1,0 +1,126 @@
+/* General Styling for Reports */
+#reports {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Title Styling */
+#reports h1 {
+  font-size: 38px;
+  color: #003366;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+#reports h1:hover {
+  color: #e74c3c;
+}
+
+/* Report Filters */
+.report-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.report-filters select,
+.report-filters input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-filters select:focus,
+.report-filters input:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
+  outline: none;
+}
+
+.generate-report-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.generate-report-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Report Cards */
+.report-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.report-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with gaps */
+  min-width: 280px; /* Ensure responsiveness */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: cardFadeIn 1s ease-in-out;
+}
+
+.report-card h3 {
+  margin-top: 0;
+  color: #003366;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.report-card p {
+  font-size: 24px;
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 0;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
